@@ -5,7 +5,7 @@ import json
 
 dir = []
 count = 0
-b = os.listdir("src/assets/UwU")
+b = os.listdir("d:/kalpika/uwugal/src/assets/UwU")
 for image in b:
     dir.append({
         'id' : count,
@@ -13,7 +13,7 @@ for image in b:
     })
     count += 1
 
-f = open("src/data.json", "w")
+f = open("d:/kalpika/uwugal/src/data.json", "w")
 f.write(json.dumps(dir, indent=1))
 f.close()
 
